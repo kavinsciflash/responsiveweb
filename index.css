@@ -1,50 +1,36 @@
-/* @media screen and (orientation: portrait) {
-    .rotation {
+@media screen and (orientation: portrait) {
+    #portrait{ 
+        display:block; 
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         font-weight: bold;
         color: navy;
-       
     }
+    #lanscape{ 
+        display:none;
+     }
 
-    .loadup{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
-
-    .loader-wrapper{
-        display: none;
-    }
-    main{
-        display: none;
-    }
 }
 @media screen and (orientation: landscape) {
-    main{
-        display: block;
-    }
-    .loader-wrapper {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #242f3f;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 3em;
-    }
-    
-    .rotation{
-        display: none;
-    }
+    #portrait{ display:none; }
+#lanscape{ 
+    display:block; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3em;
+}
 
-} */
+}
 
 #portrait{ display:none; }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
